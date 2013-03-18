@@ -964,7 +964,7 @@ p {
   font-family: inherit;
   font-weight: normal;
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.35;
   margin-bottom: 1.25em; }
   p aside {
     font-size: 0.875em;
@@ -1036,7 +1036,7 @@ ul,
 ol,
 dl {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.35;
   margin-bottom: 1.25em;
   list-style-position: outside;
   font-family: inherit; }
@@ -1101,7 +1101,7 @@ blockquote {
 
 blockquote,
 blockquote p {
-  line-height: 1.6;
+  line-height: 1.35;
   color: #6f6f6f; }
 
 /* Microformats */
@@ -3757,13 +3757,103 @@ table {
   .f-dropdown.large {
     max-width: 800px; }
 
+#hero.location-page img {
+  margin-bottom: 1rem; }
+
+#location-details p {
+  font-size: .8rem;
+  line-height: 1rem;
+  min-height: 40px;
+  margin-top: 2rem; }
+#location-details p#address {
+  padding-left: 45px;
+  background: url(../img/address.png) left top no-repeat;
+  background-size: 35px 35px; }
+#location-details p#hours {
+  padding-left: 45px;
+  background: url(../img/hours.png) left top no-repeat;
+  background-size: 35px 35px; }
+#location-details p#contact {
+  padding-left: 45px;
+  background: url(../img/contact.png) left top no-repeat;
+  background-size: 35px 35px; }
+
+#location-info {
+  margin: 2rem auto 2rem; }
+  #location-info h5 {
+    border-bottom: 1px solid #eeeeee;
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    color: #999999;
+    text-transform: uppercase; }
+  #location-info img {
+    float: left;
+    width: 20%;
+    margin-right: 5%; }
+  #location-info aside {
+    float: left;
+    width: 75%; }
+
+#other-locations {
+  background: #eeeeee;
+  text-align: center;
+  padding-bottom: 2rem; }
+
+.sidebar ul {
+  list-style-position: inside;
+  margin-top: -1rem; }
+
+.middle ul#brand-text {
+  margin: 2rem 0;
+  list-style-type: none; }
+  .middle ul#brand-text li {
+    border-bottom: 1px dotted #eeeeee;
+    padding-bottom: .3rem;
+    margin-bottom: 1.5rem;
+    width: 46%;
+    float: left; }
+  .middle ul#brand-text li:nth-child(odd) {
+    margin-right: 8%; }
+
+@media only screen and (min-width: 768px) {
+  .middle ul#brand-text {
+    margin: 2rem 0;
+    list-style-type: none; }
+    .middle ul#brand-text li {
+      border-bottom: 1px dotted #eeeeee;
+      padding-bottom: .3rem;
+      margin-bottom: 1.5rem;
+      width: 30%;
+      float: left;
+      margin-right: 0; }
+    .middle ul#brand-text li:nth-child(odd) {
+      margin-right: 0; }
+    .middle ul#brand-text li:nth-child(3n+2) {
+      margin: 0 5%; } }
+.sidebar h5 {
+  border-bottom: 1px solid #eeeeee;
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+  color: #999999;
+  text-transform: uppercase; }
+
 #masthead {
   background: #111111; }
 
 #hero {
   background: #eeeeee;
-  text-align: center;
   padding: 2rem 0; }
+  #hero .headline {
+    text-align: center; }
+
+.middle {
+  margin: 2rem auto; }
+
+.sidebar {
+  font-size: .9rem;
+  line-height: 1.1rem; }
 
 #locations ul {
   margin-top: 1rem; }
@@ -3801,6 +3891,8 @@ footer {
     list-style-type: none; }
   footer li:first-child {
     font-weight: bold; }
+  footer a {
+    color: #000; }
 
 @media only screen and (min-width: 768px) {
   #locations ul {
@@ -3815,6 +3907,4 @@ footer {
     footer li {
       display: inline-block;
       margin: 0 0.5rem;
-      color: #000; }
-    footer a {
-      color: red !important; } }
+      color: #000; } }

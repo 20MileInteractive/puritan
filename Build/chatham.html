@@ -45,8 +45,8 @@
 	<nav class="top-bar row">
 	  <ul class="title-area">
 	    <!-- Title Area -->
-	    <li class="current name">
-	      <h1><a class='current' href="index.html">Puritan Cape Cod </a></h1>
+	    <li class="name">
+	      <h1><a href="index.html">Puritan Cape Cod </a></h1>
 	    </li>
 	    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -59,7 +59,7 @@
 	      <li class="has-dropdown"><a href="#">Locations</a>
 	        <ul class="dropdown">
 	          <li><a href="#"><b>Hyannis <span>Flagship Store</span></b></a></li>
-	          <li><a href="chatham.html">Chatham</a></li>
+	          <li class='current'><a class='current' href="chatham.html">Chatham</a></li>
 	          <li><a href="#">Falmouth</a></li>
 	          <li><a href="#">Mashpee Commons</a></li>
 	          <li><a href="#">Vineyard Vines at Mashpee</a></li>
@@ -105,87 +105,80 @@
 	</nav>
 </div>
 
-<div id="hero">
+<div id="hero" class="location-page">
 	<div class="row">
-		<h4 class="headline">The best in fashion &amp; customer service, for&nbsp;over&nbsp;90&nbsp;years.</h4>
 		<div class="large-8 columns">
-		<a href="#"><img src="http://placehold.it/1200x820&text=Hyannis+Photo"/></a>
+		<img src="http://placehold.it/1200x600&text=Chatham+Photo"/>
 		</div>
 		
-		<div id="locations" class="large-4 columns">
-			<ul class="small-block-grid-2 large-block-grid-1">
-				<li><a href="chatham.html"><img src="http://placehold.it/600x200&text=Chatham"/></a></li>
-				<li><a href="#"><img src="http://placehold.it/600x200&text=Falmouth"/></a></li>
-				<li><a href="#"><img src="http://placehold.it/600x200&text=Mashpee"/></a></li>
-				<li><a href="#"><img src="http://placehold.it/600x200&text=Vineyard+Vines"/></a></li>
+		<div id="location-details" class="large-4 columns">
+			<h5>Chatham, Cape Cod</h5>
 
-			</ul>
+			<p id="contact">
+			508-945-0326<br/>
+			chatham@puritancapecod.com
+			</p>
+
+			<p id="address">
+			573 Main Street<br/>
+			Chatham, MA 02633
+			</p>
+			
+			<p id="hours">
+			Monday - Saturday<br/>
+			10:00am - 5:00pm<br/>
+			<span>Closed Sunday</span>
+			</p>
+
+
+			
 		</div>
 	</div>	
 </div>
 
 
-<div id="whats-hot">
+<div id="location-info">
 	<div class="row">
 		<div class="large-8 columns">
-			<h3>Latest Styles</h3>
+			<h3>Chatham, Puritan's first location</h3>
+			<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.
+			</p>
+			
+			<p>Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+			</p>
 
-			<div class="section-container tabs" data-section>
-
-				<section class="section">
-					<p class="title"><a href="#panel1">For Men &raquo;</a></p>
-					<div class="content">
-						<img src="http://placehold.it/150x175&text=Shirt"/>
-						<p>Bright, bold colors will be big this spring, like this collared shirt from Ralph Lauren. Pair these with your favorite khakis and hit the town.
-						</p>
-						<p>
-							<a class="small button" href="">Go To Our Men's Page</a>
-						</p>						
-					</div>
-				</section>
-				
-				<section class="section">
-					<p class="title"><a href="#panel1">For Women &raquo;</a></p>
-					<div class="content">
-						<img src="http://placehold.it/150x175&text=Shirt"/>
-						<p>Floral patterns are back big time. Take a look at this beautiful skirt from Desigual Graphic.
-						</p>
-						<p>
-							<a class="small button" href="">Go To Our Women's Page</a>
-						</p>						
-					</div>
-				</section>
-
-
-			</div>
-		
 		</div>
 		
-		<div id="events" class="large-4 columns">
-			<section>
-				<h5 class="sidebar-title">events</h5>
-				<p><b>Thursday, March 28</b><br/>10th Annual Girl's Night Out! Enjoy a night filled with beauty, pampering &amp; shopping!
-			</p>
-			<p>
-				<a class="button small secondary" href="">Learn More</a>
-			</p>
-			</section>
-			
-			<section>
-				<h5 class="sidebar-title">fashion blog</h5>
-				<p>The top 5 must-have Cape Cod fashion accessories.
-			</p>
-			<p>
-				<a class="button small secondary" href="">Read More</a>
-			</p>
-			</section>
-			
-			
+		<div class="large-4 columns sidebar">
+			<h5>Our Team</h5>
+			<img src="http://www.placehold.it/175x175&text=Photo"/>
+			<aside>
+				<p>Bill Smith<br/>
+				Store Manager<br/>
+				<a href="#">bills@puritancapecod.com</a>
+				</p>
+			</aside>
 		</div>
-		
+	
 	</div>
+</div>
 
-</div><!-- end whats hot --> 
+<div id="other-locations">
+	<div class="row">
+		<div class="large-8 push-2 columns">
+			<ul class="small-block-grid-2 large-block-grid-4">
+			<h6>Our Other Locations</h6>
+			  <li><img src="http://placehold.it/150x100&text=Hyannis"/></li>
+			  <li><img src="http://placehold.it/150x100&text=Falmouth"/></li>
+			  <li><img src="http://placehold.it/150x100&text=Mashpee"/></li>
+			  <li><img src="http://placehold.it/150x100&text=Vineyard+Vines"/></li>
+	
+			 </ul>
+		</div>
+	</div>
+</div>
+
+
 
 <footer>
 			<ul>
