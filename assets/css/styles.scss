@@ -30,6 +30,10 @@ $dk:#555;
 	@include sidebar-title;
 }
 
+.subtitle{
+		font-style: italic;
+}
+
 #masthead{
 	background: $topbar-bg;
 }

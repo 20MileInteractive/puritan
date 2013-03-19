@@ -3787,13 +3787,15 @@ table {
     margin-bottom: .5rem;
     color: #999999;
     text-transform: uppercase; }
-  #location-info img {
-    float: left;
-    width: 20%;
-    margin-right: 5%; }
   #location-info aside {
     float: left;
     width: 75%; }
+  #location-info img {
+    margin-bottom: 1rem; }
+  #location-info .sidebar img {
+    float: left;
+    width: 20%;
+    margin-right: 5%; }
 
 #other-locations {
   background: #eeeeee;
@@ -3838,6 +3840,9 @@ table {
   margin-bottom: .5rem;
   color: #999999;
   text-transform: uppercase; }
+
+.subtitle {
+  font-style: italic; }
 
 #masthead {
   background: #111111; }

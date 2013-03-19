@@ -39,20 +39,30 @@
 #location-info{
 	margin: 2rem auto 2rem;
 	
+	
 	h5{
 		@include sidebar-title;
 	}
 	
+	
+	aside{
+		float: left;
+		width: 75%;
+	}
+	
 	img{
+		margin-bottom: 1rem;
+	}
+	
+	.sidebar{
+		
+			img{
 		float: left;
 		width: 20%;
 		margin-right: 5%;
 		
 	}
-	
-	aside{
-		float: left;
-		width: 75%;
+
 	}
 }
 
