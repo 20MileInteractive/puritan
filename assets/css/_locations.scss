@@ -1,0 +1,73 @@
+#hero.location-page{
+	img{
+		margin-bottom: 1rem;
+	}
+}
+
+
+#location-details{
+
+	p{
+		font-size: .8rem;
+		line-height: 1rem;
+		min-height: 40px;
+		margin-top: 2rem;
+	}
+	p#address{
+		padding-left: 45px;
+		background: url(address.png) left top no-repeat;
+		background-size: 35px 35px;
+	}
+
+	p#hours{
+		padding-left: 45px;
+		background: url(hours.png) left top no-repeat;
+		background-size: 35px 35px;
+	}
+
+
+	p#contact{
+		padding-left: 45px;
+		background: url(contact.png) left top no-repeat;
+		background-size: 35px 35px;
+	}
+
+
+
+}
+
+#location-info{
+	margin: 2rem auto 2rem;
+	
+	
+	h5{
+		@include sidebar-title;
+	}
+	
+	
+	aside{
+		float: left;
+		width: 75%;
+	}
+	
+	img{
+		margin-bottom: 1rem;
+	}
+	
+	.sidebar{
+		
+			img{
+		float: left;
+		width: 20%;
+		margin-right: 5%;
+		
+	}
+
+	}
+}
+
+#other-locations{
+background: $lt;
+	text-align: center;
+	padding-bottom: 2rem;
+}

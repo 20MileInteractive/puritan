@@ -1,4 +1,4 @@
-puritan
-=======
+project-starter-template
+========================
 
-Purtian Prototype
+Template for web projects with Hammer and Foundation4

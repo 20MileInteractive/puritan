@@ -1,0 +1,211 @@
+<body>
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puritan Cape Cod</title>
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+  <link rel='stylesheet' href='assets/css/styles.css'>
+
+  <script src='assets/js/vendor/custom.modernizr.js'></script>
+
+</head>
+<body>
+
+<div id="masthead">
+	<nav class="top-bar row">
+	  <ul class="title-area">
+	    <!-- Title Area -->
+	    <li class="name">
+	      <h1><a href="index.html">Puritan Cape Cod </a></h1>
+	    </li>
+	    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+	
+	  <section class="top-bar-section">
+	    <!-- Left Nav Section -->
+	    <ul class="right">
+	      <li class="divider"></li>
+	      <li class="has-dropdown"><a href="#">Locations</a>
+	        <ul class="dropdown">
+	          <li><a href="hyannis.html"><b>Hyannis <span>Flagship Store</span></b></a></li>
+	          <li><a href="chatham.html">Chatham</a></li>
+	          <li><a href="falmouth.html">Falmouth</a></li>
+	          <li><a href="mashpee.html">Mashpee Commons</a></li>
+	          <li><a href="vineyard-vines.html">Vineyard Vines at Mashpee</a></li>
+	        </ul>
+	      </li>
+	      <li class="divider"></li>
+	      <li class="has-dropdown"><a href="#">Brands</a>
+	        <ul class="dropdown">
+	          <li><a href="mens.html">Men</a></li>
+	          <li><a href="womens.html">Women</a></li>
+	          <li class='current'><a class='current' href="outdoors.html">Ski &amp; Tennis</a></li>
+	        </ul>
+	      </li>
+	      <li class="divider"></li>
+	      <li class="has-dropdown"><a href="#">Services</a>
+	        <ul class="dropdown">
+	          <li><a href="template.html">Uniforms</a></li>
+	          <li><a href="template.html">Formal Rentals</a></li>
+	          <li><a href="template.html">Tailoring</a></li>
+	          <li><a href="template.html">Custom Clothes</a></li>
+	        </ul>
+	      </li>      
+	      <li class="divider"></li>
+	      <li class="has-dropdown"><a href="#">About</a>
+	        <ul class="dropdown">
+	          <li><a href="template.html">Our Story</a></li>
+	          <li><a href="template.html">Our People</a></li>
+	          <li><a href="template.html">Puritan Magazine</a></li>
+	        </ul>
+	      </li> 
+	      <li class="divider"></li>      
+	      <li><a href="#">Events</a></li>
+	      <li class="divider"></li>
+	      <li><a href="#">Fashion Blog</a></li>
+	      <li class="divider"></li>
+	      <li><a href="#">Contact</a></li>
+	      <li class="divider"></li>
+	      
+	
+	    </ul>
+	
+	  </section>
+	</nav>
+</div>
+
+<div id="hero">
+	<div class="row">
+		<div class="large-8 push-4 columns">
+		<img src="http://placehold.it/1200x600&text=Outdoors+Lifestyle+Photo"/>
+		</div>
+		
+		<div class="large-4 pull-8 columns">
+			<h4>Outdoor Shop at Puritan</h4>
+
+			<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.				
+			</p>
+			<h6>Outdoor gear for your active lifestyle.</h6>
+			
+		</div>
+	</div>	
+</div>
+
+
+<div class="middle">
+	<div class="row">
+		<div class="large-8 columns">
+				<h3 class="subtitle">All your favorite brands in one convenient location</h3>
+			
+				<ul id="brand-logos" class="small-block-grid-5">
+					<li><img src="http://placehold.it/100x100&text=LOGO"></li>
+					<li><img src="http://placehold.it/100x100&text=LOGO"></li>
+					<li><img src="http://placehold.it/100x100&text=LOGO"></li>
+					<li><img src="http://placehold.it/100x100&text=LOGO"></li>
+					<li><img src="http://placehold.it/100x100&text=LOGO"></li>
+
+				</ul>
+				
+				<ul id="brand-text">
+					<li>A Brand Name</li>
+					<li>B Brand Name</li>
+					<li>C Brand Name</li>
+					<li>D Brand Name</li>
+					<li>E Brand Name</li>
+					<li>F Brand Name</li>
+					<li>G Brand Name</li>
+					<li>H Brand Name</li>
+					<li>I Brand Name</li>
+					<li>J Brand Name</li>
+
+				</ul>
+
+			
+			
+		</div>
+		
+		<div class="large-4 columns sidebar">
+			<section>
+				<h5>our services</h5>
+					<p>To complement our fine clothing, we offer many services to help you look your best, including:</p>
+					<ul>
+						<li><a href="">Tailoring</a></li>
+						<li><a href="">Custom Clothes</a></li>
+						<li><a href="">Formal Rentals</a></li>
+					</ul>
+			</section>
+			
+			<section>
+				<h5 class="sidebar-title">fashion blog</h5>
+				<p>The top 5 must-have Cape Cod fashion accessories.
+			</p>
+			<p>
+				<a class="button small secondary" href="">Read More</a>
+			</p>
+			</section>
+			
+			
+		</div>
+	
+	</div>
+</div>
+
+
+
+
+<footer>
+			<ul>
+				<li>Puritan Cape Cod</li>
+				<li>info@puritancapecod.com</li>
+				<li><a href="tel:+18009240606">800-924-0606</a></li>
+
+</footer>
+    <script src='assets/js/vendor/jquery.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.alerts.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.clearing.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.cookie.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.dropdown.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.forms.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.joyride.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.magellan.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.orbit.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.placeholder.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.reveal.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.section.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.tooltips.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.topbar.js'></script>
+	<script src='assets/js/script.js'></script>
+</body>
+</html>

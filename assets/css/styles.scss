@@ -1,0 +1,144 @@
+// Global Foundation Settings
+@import "settings";
+
+
+
+
+$lt:#eee;
+$md:#999;
+$dk:#555;
+
+@mixin sidebar-title{
+		border-bottom: 1px solid $lt;
+		display: block;
+		font-weight: bold;
+		margin-bottom: .5rem;
+		color: $md;
+		text-transform: uppercase;
+}
+
+@mixin small-text{
+	font-size: .9rem;
+	line-height: 1.1rem;
+}
+
+@import "locations";
+@import "departments";
+
+
+.sidebar h5{
+	@include sidebar-title;
+}
+
+.subtitle{
+		font-style: italic;
+}
+
+#masthead{
+	background: $topbar-bg;
+}
+
+#hero{
+	background: $lt;
+	padding: 2rem 0;
+	
+	.headline{
+		text-align: center;
+	}
+			
+}
+
+.middle{
+	margin: 2rem auto;
+}
+
+.sidebar{
+
+		@include small-text;
+	
+}
+
+#locations{
+	ul{
+		margin-top: 1rem;
+	}
+}
+
+
+#whats-hot{
+	padding: 2em 0;
+
+	.content{
+		@include clearfix;
+		
+	}
+	
+	img{
+		float: left;
+		margin:0 20px 20px 0;
+	}
+	
+	p.title{
+		font-weight: bold;
+	}
+}
+
+
+#events{
+	color: $dk;
+	
+	h5{
+		@include sidebar-title;
+	}
+	
+}
+
+
+
+footer{
+	background: $md;
+	padding: 1rem 2rem;
+	text-align: center;
+	ul{
+		list-style-type: none;
+	}
+	
+	li:first-child{
+		font-weight: bold;
+	}
+
+	a{
+		color: #000;
+	}
+	
+}
+
+
+@media only screen and (min-width: 768px) {	
+
+	#locations{
+		ul{
+			margin-top: 0;
+			}
+	}	
+	
+
+
+footer{
+	background: $md;
+	padding: 1rem 2rem;
+	text-align: center;
+	ul{
+		list-style-type: none;
+	}
+	
+	li{
+		display: inline-block;
+		margin: 0 .5rem;
+		color:#000;
+	}
+	
+}
+
+}
+
