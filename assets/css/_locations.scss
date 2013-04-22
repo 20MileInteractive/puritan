@@ -7,6 +7,8 @@
 
 #location-details{
 
+	margin-top: 1em;
+
 	p{
 		font-size: .8rem;
 		line-height: 1rem;
@@ -39,6 +41,7 @@
 #location-info{
 	margin: 2rem auto 2rem;
 	
+	h3.subtitle {text-transform: none;}
 	
 	h5{
 		@include sidebar-title;
@@ -69,5 +72,5 @@
 #other-locations{
 background: $lt;
 	text-align: center;
-	padding-bottom: 2rem;
+	padding: 2rem;
 }

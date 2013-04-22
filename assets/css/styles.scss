@@ -2,11 +2,14 @@
 @import "settings";
 
 
-
-
+$background-one:#fff;
+$background-two:#000;
 $lt:#eee;
 $md:#999;
 $dk:#555;
+$seasonal-color-one:#87C229;
+$seasonal-color-two:#EFA7A0;
+$primary-color: #87C229;
 
 @mixin sidebar-title{
 		border-bottom: 1px solid $lt;
@@ -26,30 +29,52 @@ $dk:#555;
 @import "departments";
 
 
+h2, h3, h4, h5, h6 {text-transform: uppercase;}
+
 .sidebar h5{
 	@include sidebar-title;
 }
 
 .subtitle{
 		font-style: italic;
+		text-transform: none;
 }
 
 #masthead{
 	background: $topbar-bg;
 }
 
-#hero{
-	background: $lt;
-	padding: 2rem 0;
-	
+.top-bar li, .top-bar a {
+	// letter-spacing: 2px;
+	// font-family: didot, serif;
+
+}
+
+.top-bar-section .dropdown li a {background: $background-two;}
+
+.top-bar-section li a:not(.button):hover {
+	background: #000;
+}
+
+#hero{	
+-moz-box-shadow:    inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+-webkit-box-shadow: inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+
+	h4 {margin-top: 1em;}
+
 	.headline{
 		text-align: center;
+		font-family: georgia, serif;
+		font-style: italic;
+		font-weight: normal;
+		color: #fff;
 	}
 			
 }
 
 .middle{
-	margin: 2rem auto;
+	margin: 1rem auto 2rem auto;
 }
 
 .sidebar{
@@ -58,60 +83,133 @@ $dk:#555;
 	
 }
 
-#locations{
-	ul{
-		margin-top: 1rem;
+// #locations{
+// 	ul{
+// 		margin-top: 1rem;
+// 	}
+// }
+
+#secondary {background: #fff url(../img/brillant_@2X.png);}
+.secondary-locations {margin-top: -1.5em;}
+.location-grid {@include block-grid(false, 0, true);}
+
+.location-panel {
+	background-image: url(../img/storefront2.jpg);
+	background-size: cover;
+
+	a {
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.8);
+		line-height: 4rem;
+		height: 4rem;
+		display: block;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: didot, serif;
+		overflow: hidden;
+		font-size: 1.2em;
+		letter-spacing: 1px;
+		-moz-transition:background 1s;
+		-webkit-transition:background 1s;
+		transition:background 1s;
+	}
+
+	a:hover {
+		background-color: transparent;
+		text-indent: -99em;
 	}
 }
 
+.fashions{
+	padding: 6em 0 2em 0;
+	position: relative;
 
-#whats-hot{
-	padding: 2em 0;
+	#latest-fashion-headline {
+		// margin-bottom: -4em;
+		// padding-left: 2em;
+		position: absolute;
+		top: -2em;
+		left: 2em;
+		z-index: 500;
+	}
+	
 
-	.content{
-		@include clearfix;
+	#latest-fashion-links li {
+		text-align: center; 
+		// background: #fff;
 		
+			img {
+				float: none;
+		-moz-transition:opacity 1s;
+		-webkit-transition:opacity 1s;
+		transition:opacity 1s;
+			}
+			a h4 {
+				-moz-transition:color 1s;
+				-webkit-transition:color 1s;
+				transition:color 1s;
+			}
+			a:hover h4 {color: #888;};
+			
 	}
-	
-	img{
-		float: left;
-		margin:0 20px 20px 0;
+
+	#latest-fashion-links li a:hover img {
+		opacity: 0.5;
+	};
+
+
+}
+
+#headlines {
+	background: #fff;
+	padding-top: 2em;
+	border-top: 3px double #ddd;
+	padding-bottom: 3em;
+
+	.section-title {
+		padding-bottom: .5em;
+		background: url(../img/rule1.png) no-repeat 50% 100%;
+		text-align: center;
 	}
-	
-	p.title{
-		font-weight: bold;
+
+	article h2 {
+		text-align: center;
+		font-size: .875em;
+		color: #666;
+		-moz-transition:color 1s;
+				-webkit-transition:color 1s;
+				transition:color 1s;
+		}
+
+	article h1 {
+		font-size: 3em;
+		text-align: center;
+		line-height: 1em;
+		margin-bottom: 0;
+		-moz-transition:color .2s;
+				-webkit-transition:color .2s;
+				transition:color .2s;
+	}
+
+	article h3 {text-align: center; text-transform: none;}
+
+	#events {
+		color: $dk;
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		border-bottom: 1px dotted lighten($background-two, 80%);
+
+		.section-title {color: $seasonal-color-one;}
+		a:hover h1, a:hover h2 {color: $seasonal-color-one;}
+	}
+
+	#blog {
+		.section-title {color: $seasonal-color-two;}
+		a:hover h1, a:hover h2 {color: $seasonal-color-two;}
 	}
 }
 
-
-#events{
-	color: $dk;
-	
-	h5{
-		@include sidebar-title;
-	}
-	
-}
-
-
-
-footer{
-	background: $md;
-	padding: 1rem 2rem;
-	text-align: center;
-	ul{
-		list-style-type: none;
-	}
-	
-	li:first-child{
-		font-weight: bold;
-	}
-
-	a{
-		color: #000;
-	}
-	
-}
 
 
 @media only screen and (min-width: 768px) {	
@@ -125,17 +223,25 @@ footer{
 
 
 footer{
-	background: $md;
-	padding: 1rem 2rem;
+	background: lighten($background-two, 10%);
+	padding: 2rem;
 	text-align: center;
+
+	p {color: lighten($background-two, 40%);}
+
 	ul{
 		list-style-type: none;
+		margin-bottom: .5em;
 	}
 	
 	li{
 		display: inline-block;
 		margin: 0 .5rem;
-		color:#000;
+		color:lighten($background-two, 50%);
+		font-size: 1.2em;
+
+		a {color: $seasonal-color-one;}
+		a:hover {color: lighten($seasonal-color-one, 25%);}
 	}
 	
 }
