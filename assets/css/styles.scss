@@ -27,6 +27,7 @@ $primary-color: #87C229;
 
 @import "locations";
 @import "departments";
+@import "chino";
 
 
 h2, h3, h4, h5, h6 {text-transform: uppercase;}
@@ -42,12 +43,6 @@ h2, h3, h4, h5, h6 {text-transform: uppercase;}
 
 #masthead{
 	background: $topbar-bg;
-}
-
-.top-bar li, .top-bar a {
-	// letter-spacing: 2px;
-	// font-family: didot, serif;
-
 }
 
 .top-bar-section .dropdown li a {background: $background-two;}
@@ -89,7 +84,7 @@ box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
 // 	}
 // }
 
-#secondary {background: #fff url(../img/brillant_@2X.png);}
+#secondary {background: #fff url(../img/brillant.png);}
 .secondary-locations {margin-top: -1.5em;}
 .location-grid {@include block-grid(false, 0, true);}
 
@@ -165,7 +160,7 @@ box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
 	background: #fff;
 	padding-top: 2em;
 	border-top: 3px double #ddd;
-	padding-bottom: 3em;
+	padding-bottom: 4em;
 
 	.section-title {
 		padding-bottom: .5em;
@@ -211,17 +206,6 @@ box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
 }
 
 
-
-@media only screen and (min-width: 768px) {	
-
-	#locations{
-		ul{
-			margin-top: 0;
-			}
-	}	
-	
-
-
 footer{
 	background: lighten($background-two, 10%);
 	padding: 2rem;
@@ -240,11 +224,19 @@ footer{
 		color:lighten($background-two, 50%);
 		font-size: 1.2em;
 
-		a {color: $seasonal-color-one;}
-		a:hover {color: lighten($seasonal-color-one, 25%);}
+		a {color: #fff;}
+		a:hover {color: darken(#fff, 25%);}
 	}
 	
 }
+
+@media only screen and (min-width: 768px) {	
+
+	#locations{
+		ul{
+			margin-top: 0;
+			}
+	}	
 
 }
 
