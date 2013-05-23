@@ -3878,6 +3878,9 @@ h2, h3, h4, h5, h6 {
   -moz-box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5); }
+  #hero.home-page {
+    text-align: center;
+    background-color: #020d30; }
   #hero h4 {
     margin-top: 1em; }
   #hero .headline {
