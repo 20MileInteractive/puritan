@@ -1,4 +1,4 @@
-project-starter-template
+Puritan Prototype
 ========================
 
-Template for web projects with Hammer and Foundation4
+Static prototypes for puritan to be used in ExpressionEngine.
