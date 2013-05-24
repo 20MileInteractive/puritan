@@ -3850,6 +3850,9 @@ table {
   #chino a:hover {
     color: #5e0000; }
 
+#event-info {
+  background: #eee; }
+
 h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
