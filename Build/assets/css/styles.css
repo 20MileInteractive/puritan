@@ -2350,12 +2350,12 @@ form.custom {
     width: 100%;
     height: auto;
     display: block;
-    background: #333333;
+    background: #020d30;
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider {
-    border-bottom: solid 1px #4d4d4d;
-    border-top: solid 1px #1a1a1a;
+    border-bottom: solid 1px #041a61;
+    border-top: solid 1px black;
     clear: both;
     height: 1px;
     width: 100%; }
@@ -2367,9 +2367,9 @@ form.custom {
     padding-left: 15px;
     font-size: 0.8125em;
     font-weight: bold;
-    background: #333333; }
+    background: #020d30; }
     .top-bar-section ul li > a:hover {
-      background: #2b2b2b; }
+      background: #010921; }
     .top-bar-section ul li > a.button {
       background: #87c229;
       font-size: 0.8125em; }
@@ -2388,7 +2388,7 @@ form.custom {
       .top-bar-section ul li > a.button.alert:hover {
         background: #970b0e; }
   .top-bar-section ul li.active a {
-    background: #2b2b2b; }
+    background: #010921; }
   .top-bar-section .has-form {
     padding: 15px; }
   .top-bar-section .has-dropdown {
