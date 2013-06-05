@@ -973,7 +973,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Didot W02 Roman", didot, serif;
+  font-family: "Didot eText W01 Regular", didot, serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3856,6 +3856,10 @@ table {
 h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
+blockquote {
+  font-family: "Didot eText W01 Italic", Didot, serif;
+  font-style: italic; }
+
 .sidebar h5 {
   border-bottom: 1px solid #eeeeee;
   display: block;
@@ -3866,7 +3870,8 @@ h2, h3, h4, h5, h6 {
 
 .subtitle {
   font-style: italic;
-  text-transform: none; }
+  text-transform: none;
+  font-family: "Didot eText W01 Italic", Didot, serif; }
 
 #masthead {
   background: #020d30; }
@@ -3954,7 +3959,9 @@ h2, h3, h4, h5, h6 {
       float: none;
       -moz-transition: opacity 1s;
       -webkit-transition: opacity 1s;
-      transition: opacity 1s; }
+      transition: opacity 1s;
+      width: 200px;
+      /* @todo remove this when we get real photos */ }
     .fashions #latest-fashion-links li a h4 {
       -moz-transition: color 1s;
       -webkit-transition: color 1s;

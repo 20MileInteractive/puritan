@@ -11,6 +11,8 @@ $seasonal-color-one:#87C229;
 $seasonal-color-two:#EFA7A0;
 $primary-color: #87C229;
 
+$italic-font: "Didot eText W01 Italic", Didot, serif;
+
 @mixin sidebar-title{
 		border-bottom: 1px solid $lt;
 		display: block;
@@ -30,7 +32,13 @@ $primary-color: #87C229;
 @import "chino";
 @import "events";
 
+
 h2, h3, h4, h5, h6 {text-transform: uppercase;}
+
+blockquote {
+	font-family: $italic-font;
+	font-style: italic;
+}
 
 .sidebar h5{
 	@include sidebar-title;
@@ -39,6 +47,7 @@ h2, h3, h4, h5, h6 {text-transform: uppercase;}
 .subtitle{
 		font-style: italic;
 		text-transform: none;
+		font-family: $italic-font;
 }
 
 #masthead{
@@ -144,6 +153,7 @@ h2, h3, h4, h5, h6 {text-transform: uppercase;}
 		-moz-transition:opacity 1s;
 		-webkit-transition:opacity 1s;
 		transition:opacity 1s;
+		width: 200px; /* @todo remove this when we get real photos */
 			}
 			a h4 {
 				-moz-transition:color 1s;
