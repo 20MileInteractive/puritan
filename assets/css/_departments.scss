@@ -1,5 +1,4 @@
 .sidebar{
-	
 	ul{
 		list-style-position: inside;
 		margin-top: -1rem;
@@ -10,52 +9,43 @@
 	ul#brand-text{
 		margin: 2rem 0;
 		list-style-type: none;
-		
 		li{
 			border-bottom: 1px dotted $lt;
 			padding-bottom: .3rem;
 			margin-bottom: 1.5rem;
 			width: 46%;
 			float: left;
-		}
-		
-		li:nth-child(odd){
-			margin-right: 8%;
+
+			&:nth-child(odd){
+				margin-right: 8%;
+			}
 		}
 	}
-	
 }
 
 @media only screen and (min-width: 768px){
-	
+
 	.middle{
-	ul#brand-text{
-		margin: 2rem 0;
-		list-style-type: none;
-		
-		li{
-			border-bottom: 1px dotted $lt;
-			padding-bottom: .3rem;
-			margin-bottom: 1.5rem;
-			width: 30%;
-			float: left;
-			margin-right: 0;
+		ul#brand-text{
+			margin: 2rem 0;
+			list-style-type: none;
+
+			li{
+				border-bottom: 1px dotted $lt;
+				padding-bottom: .3rem;
+				margin-bottom: 1.5rem;
+				width: 30%;
+				float: left;
+				margin-right: 0;
+
+				&:nth-child(odd){
+					margin-right:0;
+				}
+
+				&:nth-child(3n+2){
+					margin: 0 5%;
+				}
+			}
 		}
-		
-		
-		li:nth-child(odd){
-			margin-right:0;
-		}
-		
-		li:nth-child(3n+2){
-			margin: 0 5%;
-		}
-		
-		
-		
 	}
-	
-}
-	
-	
 }

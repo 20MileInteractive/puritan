@@ -60,7 +60,7 @@ blockquote {
 	background: lighten($topbar-bg, 5%);
 }
 
-#hero{	
+#hero{
 	-moz-box-shadow:    inset 0px 1px 3px 0 rgba(0,0,0,0.50);
 	-webkit-box-shadow: inset 0px 1px 3px 0 rgba(0,0,0,0.50);
 	box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
@@ -79,7 +79,6 @@ blockquote {
 		font-weight: normal;
 		color: #fff;
 	}
-			
 }
 
 .middle{
@@ -87,9 +86,7 @@ blockquote {
 }
 
 .sidebar{
-
-		@include small-text;
-	
+	@include small-text;
 }
 
 // #locations{
@@ -98,13 +95,27 @@ blockquote {
 // 	}
 // }
 
-#secondary {background: #fff url(../img/brillant.png);}
-.secondary-locations {margin-top: -1.5em;}
-.location-grid {@include block-grid(false, 0, true);}
+#secondary {
+	background: #fff url(../img/brillant.png);
+}
+
+.secondary-locations {
+	margin-top: -1.5em;
+}
+
+.location-grid {
+	@include block-grid(false, 0, true);
+}
 
 .location-panel {
 	background-image: url(../img/storefront2.jpg);
 	background-size: cover;
+
+	&.hyannis { background-image: url(../img/location-menu-hyannis.jpg); }
+	&.chatham { background-image: url(../img/location-menu-chatham.jpg); }
+	&.falmouth { background-image: url(../img/location-menu-falmouth.jpg); }
+	&.mashpee { background-image: url(../img/location-menu-mashpee.jpg); }
+	&.vineyard-vines { background-image: url(../img/location-menu-vineyard-vines.jpg); }
 
 	a {
 		background-color: rgb(2,13,48);
@@ -135,13 +146,12 @@ blockquote {
 	background-size: 80%;
 
 	.experience-inner {/* Path: */
-background-image: -o-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
-background-image: -moz-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
-background-image: -webkit-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
-background-image: -ms-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
-background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
-
-}
+		background-image: -o-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -moz-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -webkit-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -ms-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+	}
 
 	.dining {background: #01071B;}
 
@@ -151,7 +161,6 @@ background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
 	}
 
 	h3 {
-		
 		margin-top: 1em;
 		color: #fff;
 		font-family: "Didot eText W01 Italic", georgia, serif;
@@ -177,14 +186,15 @@ background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
 		color: #fff;
 		margin: 0;
 		width: 100%;
-		
-
-
 	}
 
-	.spa {position: relative; padding-left: 1em;}
-	.spa h4 {
-		font-size: emCalc(14px);
+	.spa {
+		position: relative;
+		padding-left: 1em;
+
+		h4 {
+			font-size: emCalc(14px);
+		}
 	}
 }
 
@@ -193,33 +203,30 @@ background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
 	position: relative;
 
 	#latest-fashion-headline {
-		// margin-bottom: -4em;
-		// padding-left: 2em;
 		position: absolute;
 		top: -2em;
 		left: 2em;
 		z-index: 500;
 	}
-	
 
 	#latest-fashion-links li {
-		text-align: center; 
-		// background: #fff;
-		
-			img {
-				float: none;
-		-moz-transition:opacity 1s;
-		-webkit-transition:opacity 1s;
-		transition:opacity 1s;
-		width: 200px; /* @todo remove this when we get real photos */
-			}
-			a h4 {
-				-moz-transition:color 1s;
-				-webkit-transition:color 1s;
-				transition:color 1s;
-			}
-			a:hover h4 {color: #888;};
-			
+		text-align: center;
+
+		img {
+			float: none;
+			-moz-transition:opacity 1s;
+			-webkit-transition:opacity 1s;
+			transition:opacity 1s;
+			width: 200px; /* @todo remove this when we get real photos */
+		}
+		a h4 {
+			-moz-transition:color 1s;
+			-webkit-transition:color 1s;
+			transition:color 1s;
+		}
+		a:hover h4 {
+			color: #888;
+		};
 	}
 
 	#latest-fashion-links li a:hover img {
@@ -290,7 +297,6 @@ footer{
 		list-style-type: none;
 		margin-bottom: .5em;
 	}
-	
 	li{
 		display: inline-block;
 		margin: 0 .5rem;
@@ -300,16 +306,15 @@ footer{
 		a {color: #fff;}
 		a:hover {color: darken(#fff, 25%);}
 	}
-	
 }
 
-@media only screen and (min-width: 768px) {	
+@media only screen and (min-width: 768px) {
 
 	#locations{
 		ul{
 			margin-top: 0;
 			}
-	}	
+	}
 
 }
 
