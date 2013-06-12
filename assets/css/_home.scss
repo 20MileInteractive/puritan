@@ -1,0 +1,197 @@
+.location-panel {
+	background-image: url(../img/storefront2.jpg);
+	background-size: cover;
+
+	&.hyannis { background-image: url(../img/location-menu-hyannis.jpg); }
+	&.chatham { background-image: url(../img/location-menu-chatham.jpg); }
+	&.falmouth { background-image: url(../img/location-menu-falmouth.jpg); }
+	&.mashpee { background-image: url(../img/location-menu-mashpee.jpg); }
+	&.vineyard-vines { background-image: url(../img/location-menu-vineyard-vines.jpg); }
+
+	a {
+		background-color: rgb(2,13,48);
+		background-color: rgba(2,13,48,0.8);
+		line-height: 4rem;
+		height: 4rem;
+		display: block;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: didot, serif;
+		overflow: hidden;
+		font-size: 1em;
+		letter-spacing: 1px;
+		-moz-transition:background 1s;
+		-webkit-transition:background 1s;
+		transition:background 1s;
+	}
+
+	a:hover {
+		background-color: transparent;
+		text-indent: -99em;
+	}
+}
+
+.experience {
+	background: #01071B url(../img/solstice-photo-1200x600.jpg) no-repeat -30% 20%;
+	background-size: 80%;
+
+	.experience-inner {/* Path: */
+		background-image: -o-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -moz-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -webkit-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: -ms-linear-gradient(-90deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+		background-image: linear-gradient(-180deg, #01071B 0%, rgba(24,24,24,0.00) 30%);
+	}
+
+	.dining {background: #01071B;}
+
+	.dining a {
+		display: block;
+		position: relative;
+	}
+
+	h3 {
+		margin-top: 1em;
+		color: #fff;
+		font-family: "Didot eText W01 Italic", georgia, serif;
+		text-transform: none;
+		span {
+			font-size: emCalc(14px);
+			display: inline-block;
+		}
+	}
+
+	.dining h4 {
+		line-height: emCalc(27px);
+		position: absolute; z-index: 100;
+		top: 0; left: 0;
+		// background: rgba(0,0,0,0.2);
+		background-image: -o-linear-gradient(-90deg, #313131 0%, rgba(24,24,24,0.00) 100%);
+		background-image: -moz-linear-gradient(-90deg, #313131 0%, rgba(24,24,24,0.00) 100%);
+		background-image: -webkit-linear-gradient(-90deg, #313131 0%, rgba(24,24,24,0.00) 100%);
+		background-image: -ms-linear-gradient(-90deg, #313131 0%, rgba(24,24,24,0.00) 100%);
+		background-image: linear-gradient(-180deg, #313131 0%, rgba(24,24,24,0.00) 100%);
+		font-size: emCalc(18px);
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		width: 100%;
+	}
+
+	.spa {
+		position: relative;
+		padding-left: 1em;
+
+		h4 {
+			font-size: emCalc(14px);
+		}
+	}
+}
+
+.fashions{
+	padding: 6em 0 2em 0;
+	position: relative;
+
+	#latest-fashion-headline {
+		position: absolute;
+		top: -2em;
+		left: 2em;
+		z-index: 500;
+	}
+
+	#latest-fashion-links li {
+		text-align: center;
+
+		img {
+			float: none;
+			-moz-transition:opacity 1s;
+			-webkit-transition:opacity 1s;
+			transition:opacity 1s;
+			width: 200px; /* @todo remove this when we get real photos */
+		}
+		a h4 {
+			-moz-transition:color 1s;
+			-webkit-transition:color 1s;
+			transition:color 1s;
+		}
+		a:hover h4 {
+			color: #888;
+		}
+	}
+
+	#latest-fashion-links li a:hover img {
+		opacity: 0.5;
+	}
+}
+
+#headlines {
+	background: #fff;
+	padding-top: 2em;
+	border-top: 3px double #ddd;
+	padding-bottom: 4em;
+
+	.section-title {
+		padding-bottom: .5em;
+		background: url(../img/rule1.png) no-repeat 50% 100%;
+		text-align: center;
+	}
+
+	article h2 {
+		text-align: center;
+		font-size: .875em;
+		color: #666;
+		-moz-transition:color 1s;
+				-webkit-transition:color 1s;
+				transition:color 1s;
+		}
+
+	article h1 {
+		font-size: 3em;
+		text-align: center;
+		line-height: 1em;
+		margin-bottom: 0;
+		-moz-transition:color .2s;
+				-webkit-transition:color .2s;
+				transition:color .2s;
+	}
+
+	article h3 {text-align: center; text-transform: none;}
+
+	#events {
+		color: $dk;
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+		border-bottom: 1px dotted lighten($background-two, 80%);
+
+		.section-title {color: $seasonal-color-one;}
+		a:hover h1, a:hover h2 {color: $seasonal-color-one;}
+	}
+
+	#blog {
+		.section-title {color: $seasonal-color-two;}
+		a:hover h1, a:hover h2 {color: $seasonal-color-two;}
+	}
+}
+
+footer{
+	background: lighten($background-two, 10%);
+	padding: 2rem;
+	text-align: center;
+
+	p {color: lighten($background-two, 40%);}
+
+	ul{
+		list-style-type: none;
+		margin-bottom: .5em;
+	}
+	li{
+		display: inline-block;
+		margin: 0 .5rem;
+		color:lighten($background-two, 50%);
+		font-size: 1.2em;
+
+		a {color: #fff;}
+		a:hover {color: darken(#fff, 25%);}
+	}
+}

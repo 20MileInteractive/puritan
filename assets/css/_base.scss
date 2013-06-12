@@ -1,0 +1,67 @@
+h2, h3, h4, h5, h6 {text-transform: uppercase;}
+
+blockquote {
+	font-family: $italic-font;
+	font-style: italic;
+}
+
+.sidebar h5{
+	@include sidebar-title;
+}
+
+.subtitle{
+		font-style: italic;
+		text-transform: none;
+		font-family: $italic-font;
+}
+
+#masthead{
+	background: $topbar-bg;
+}
+
+.top-bar-section .dropdown li a {background: $topbar-bg;}
+
+.top-bar-section li a:not(.button):hover {
+	background: lighten($topbar-bg, 5%);
+}
+
+#hero{
+	-moz-box-shadow:    inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+	box-shadow:         inset 0px 1px 3px 0 rgba(0,0,0,0.50);
+
+	&.home-page {
+		text-align: center;
+		background-color: $topbar-bg;
+	}
+
+	h4 {margin-top: 1em;}
+
+	.headline{
+		text-align: center;
+		font-family: georgia, serif;
+		font-style: italic;
+		font-weight: normal;
+		color: #fff;
+	}
+}
+
+.middle{
+	margin: 1rem auto 2rem auto;
+}
+
+.sidebar{
+	@include small-text;
+}
+
+#secondary {
+	background: #fff url(../img/brillant.png);
+}
+
+.secondary-locations {
+	margin-top: -1.5em;
+}
+
+.location-grid {
+	@include block-grid(false, 0, true);
+}
