@@ -95,8 +95,8 @@
 
 	#latest-fashion-headline {
 		position: absolute;
-		top: -2em;
-		left: 2em;
+		top: -69px;
+		left: 175px;
 		z-index: 500;
 	}
 
@@ -108,7 +108,7 @@
 			-moz-transition:opacity 1s;
 			-webkit-transition:opacity 1s;
 			transition:opacity 1s;
-			width: 200px; /* @todo remove this when we get real photos */
+			
 		}
 		a h4 {
 			-moz-transition:color 1s;
