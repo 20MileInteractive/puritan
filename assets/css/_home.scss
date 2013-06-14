@@ -125,54 +125,7 @@
 	}
 }
 
-#headlines {
-	background: #fff;
-	padding-top: 2em;
-	border-top: 3px double #ddd;
-	padding-bottom: 4em;
 
-	.section-title {
-		padding-bottom: .5em;
-		background: url(../img/rule1.png) no-repeat 50% 100%;
-		text-align: center;
-	}
-
-	article h2 {
-		text-align: center;
-		font-size: .875em;
-		color: #666;
-		-moz-transition:color 1s;
-				-webkit-transition:color 1s;
-				transition:color 1s;
-		}
-
-	article h1 {
-		font-size: 3em;
-		text-align: center;
-		line-height: 1em;
-		margin-bottom: 0;
-		-moz-transition:color .2s;
-				-webkit-transition:color .2s;
-				transition:color .2s;
-	}
-
-	article h3 {text-align: center; text-transform: none;}
-
-	#events {
-		color: $dk;
-		padding-bottom: 2em;
-		margin-bottom: 2em;
-		border-bottom: 1px dotted lighten($background-two, 80%);
-
-		.section-title {color: $seasonal-color-one;}
-		a:hover h1, a:hover h2 {color: $seasonal-color-one;}
-	}
-
-	#blog {
-		.section-title {color: $seasonal-color-two;}
-		a:hover h1, a:hover h2 {color: $seasonal-color-two;}
-	}
-}
 
 footer{
 	background: lighten($background-two, 10%);

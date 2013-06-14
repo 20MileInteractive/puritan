@@ -7,8 +7,10 @@ $background-two:#000;
 $lt:#eee;
 $md:#999;
 $dk:#555;
-$seasonal-color-one:#87C229;
-$seasonal-color-two:#EFA7A0;
+$seasonal-color-one:#87C229; //green
+$seasonal-color-two:#7EC7B7; //aqua
+
+
 $primary-color: #87C229;
 
 $italic-font: "Didot eText W01 Italic", Didot, serif;
@@ -32,7 +34,7 @@ $italic-font: "Didot eText W01 Italic", Didot, serif;
 @import "locations";
 @import "departments";
 @import "chino";
-@import "events";
+@import "headlines";
 @import "home";
 
 @media only screen and (min-width: 768px) {
