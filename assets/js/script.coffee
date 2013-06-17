@@ -3,7 +3,17 @@ $ ->
 	# Write scripts here
 
 	submitContactForm = ()->
-		$(this).addClass("hide").next().removeClass("hide")
+		$form = $(@)
+
+		$form.find('.error').removeClass('error')
+
+		$.post $form.attr('action'), $form.serialize(), (data)->
+			if data.success == false
+				$.each data.errors, (elem, message)->
+					$("[name=#{elem}]").addClass("error")
+			else
+				$form.addClass("hide").next().removeClass("hide")
+				$form.remove()
 
 		return false
 
