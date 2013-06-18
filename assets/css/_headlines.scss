@@ -48,17 +48,6 @@
 	}
 }
 
-.home-headlines {
-	border-top: 3px double #ddd;
-
-	#events {
-		padding-bottom: 2em;
-		margin-bottom: 2em;
-		// border-bottom: 1px dotted lighten($background-two, 80%);
-		/* This border separates events from blog listings, which were temporarily removed */
-	}
-}
-
 .headlines.event {
 
 	h1 {color: $seasonal-color-one;}

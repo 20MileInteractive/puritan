@@ -65,3 +65,25 @@ blockquote {
 .location-grid {
 	@include block-grid(false, 0, true);
 }
+
+footer{
+	background: lighten($background-two, 10%);
+	padding: 2rem;
+	text-align: center;
+
+	p {color: lighten($background-two, 40%);}
+
+	ul{
+		list-style-type: none;
+		margin-bottom: .5em;
+	}
+	li{
+		display: inline-block;
+		margin: 0 .5rem;
+		color:lighten($background-two, 50%);
+		font-size: 1.2em;
+
+		a {color: #fff;}
+		a:hover {color: darken(#fff, 25%);}
+	}
+}

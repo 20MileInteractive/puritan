@@ -108,7 +108,6 @@
 			-moz-transition:opacity 1s;
 			-webkit-transition:opacity 1s;
 			transition:opacity 1s;
-			
 		}
 		a h4 {
 			-moz-transition:color 1s;
@@ -125,26 +124,11 @@
 	}
 }
 
+.home-headlines {
+	border-top: 3px double #ddd;
+	padding-bottom: 2em;
 
-
-footer{
-	background: lighten($background-two, 10%);
-	padding: 2rem;
-	text-align: center;
-
-	p {color: lighten($background-two, 40%);}
-
-	ul{
-		list-style-type: none;
-		margin-bottom: .5em;
-	}
-	li{
-		display: inline-block;
-		margin: 0 .5rem;
-		color:lighten($background-two, 50%);
-		font-size: 1.2em;
-
-		a {color: #fff;}
-		a:hover {color: darken(#fff, 25%);}
+	#events {
+		margin-bottom: 2em;
 	}
 }
