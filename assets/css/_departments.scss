@@ -10,7 +10,7 @@
 		margin: 2rem 0;
 		list-style-type: none;
 		li{
-			border-bottom: 1px dotted $lt;
+			font-weight: bold;
 			padding-bottom: .3rem;
 			margin-bottom: 1.5rem;
 			width: 46%;
@@ -31,11 +31,7 @@
 			list-style-type: none;
 
 			li{
-				border-bottom: 1px dotted $lt;
-				padding-bottom: .3rem;
-				margin-bottom: 1.5rem;
 				width: 30%;
-				float: left;
 				margin-right: 0;
 
 				&:nth-child(odd){
