@@ -1,0 +1,19 @@
+#blog {
+	article {
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px dotted #cecece;
+	}
+}
+
+#events {
+	article {
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px dotted #cecece;
+
+		h2.event-date {
+			font-size: 1.5em;
+		}
+	}
+}
