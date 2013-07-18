@@ -83,3 +83,37 @@
 .lt-ie9 .row { *zoom: 1; }
 .lt-ie9 .row:before, .row:after { content: " "; display: table; }
 .lt-ie9 .row:after { clear: both; }
+
+/* specific fixes added by DEF */
+.lt-ie9 .location-grid a {
+	width: 148px;
+	height: 44px;
+	padding: 10px 0;
+}
+.lt-ie9 #latest-fashion-links li, .lt-ie9 #brand-logos li, .lt-ie9 #other-locations li {
+	list-style: none;
+	float: left;
+}
+.lt-ie9 #brand-logos li {
+	margin-right: 10px;
+}
+.lt-ie9 #latest-fashion-links li:first-child {
+	margin-right: 65px;
+}
+.lt-ie9 #chino .row .large-3 {
+	float: left;
+}
+.lt-ie9 #chino .row .large-6 {
+	float: right;
+}
+.lt-ie9 #other-locations li {
+	width: 144px;
+	height: 96px;
+	overflow: hidden;
+	padding: 0;
+}
+.lt-ie9 #other-locations li span {
+	display: block;
+	position: absolute;
+	top: -30px;
+}
