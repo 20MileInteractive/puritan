@@ -1,0 +1,32 @@
+.hidden {
+	display: none;
+}
+@media print {
+  div:not(.reveal-modal) {
+    display: inherit !important;
+  }
+	.hidden {
+		display: block;
+	}
+	header a.logo-area {
+		width: auto;
+		height: auto;
+	}
+	header a.cart-link, #nav-holder, .breadcrumbs, #footer, .menu-icon, .orbit-container #hero, .secondary-locations, #other-locations {
+		display: none !important;
+	}
+	#latest-fashion-headline {
+		clear: both;
+		position: relative;
+	}
+	.fashions li {
+		width: 200px;
+		list-style: none;
+	}
+	#brand-logos li {
+		display: inline-block;
+	}
+	.headlines img {
+		max-width: 100px;
+	}
+}
